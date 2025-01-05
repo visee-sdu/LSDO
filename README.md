@@ -3,7 +3,7 @@
 - [x] The code for video-level LSDOs
 - [x] The code for frame-level LSDOs
 - [ ] The code for LSMDC and DiDeMo datasets
-- [ ] The code for tet-level LSDOs
+- [ ] The code for text-level LSDOs
 
 # Enhancing Text-Video Retrieval Performance with Low-Salient but Discriminative Objects
 The official repository for LSDO.
