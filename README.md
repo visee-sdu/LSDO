@@ -1,7 +1,7 @@
 # TODOs
 - [x] The code for MSRVTT and MSVD datasets
 - [x] The code for video-level LSDOs
-- [ ] The code for frame-level LSDOs
+- [x] The code for frame-level LSDOs
 - [ ] The code for LSMDC and DiDeMo datasets
 - [ ] The code for tet-level LSDOs
 
