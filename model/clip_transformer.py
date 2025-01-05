@@ -74,7 +74,7 @@ class CLIPTransformer(nn.Module):
         self.scene = Scene(config)
         self.tw = nn.Parameter(torch.Tensor([0.3, 0.7]))
         self.pool = nn.AdaptiveAvgPool1d(1)
-        self.threshold = nn.Parameter(torch.Tensor([config.threshold]))
+        # self.threshold = nn.Parameter(torch.Tensor([config.threshold]))
 
     def forward(self, data, return_all_frames=False):
         batch_size = data['video'].shape[0]
@@ -94,11 +94,16 @@ class CLIPTransformer(nn.Module):
         elif self.config.scene_type == 'single':
             scene = self.pool(vf).squeeze()
             x = scene - vf[:, :, self.config.select_frame]
-            zeros = torch.zeros_like(scene)
-            t = torch.exp(self.threshold)
-            scene = torch.where(x > t, zeros, scene)
-            scene = torch.where(x < -t, zeros, scene)
+            # zeros = torch.zeros_like(scene)
+            # t = torch.exp(self.threshold)
+            # scene = torch.where(x > t, zeros, scene)
+            # scene = torch.where(x < -t, zeros, scene)
+            # scene = scene.reshape(batch_size, 1, -1)
+            threshold_effect = 0.5 * (torch.tanh(-30 * (x - self.threshold)) + 1)
+            scene = x * threshold_effect
+            
             scene = scene.reshape(batch_size, 1, -1)
+
 
         video_scene = self.scene(vf, scene)
         video_features = video_features.reshape(batch_size, self.config.num_frames, -1)
