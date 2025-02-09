@@ -62,8 +62,14 @@ If you find this work useful in your research, please cite the following paper:
   keywords={Feature extraction;Semantics;Transformers;Visualization;Prototypes;Computational modeling;Aggregates;Indexes;Encoding;Context modeling;Text-video retrieval;low-salient but discriminative objects;cross-modal attention},
   doi={10.1109/TIP.2025.3527369}}
 
-# GB/T 7714-2015
+# GB/T 7714
 [1] Zheng Y , Huang B , Chen Z ,et al.Enhancing Text-Video Retrieval Performance With Low-Salient but Discriminative Objects[J].IEEE Transactions on Image Processing, 2025.DOI:10.1109/TIP.2025.3527369.
+
+# MLA
+[1] Zheng, Yanwei , et al. "Enhancing Text-Video Retrieval Performance With Low-Salient but Discriminative Objects." IEEE Transactions on Image Processing (2025).
+
+# APA
+[1] Zheng, Y. ,  Huang, B. ,  Chen, Z. , &  Yu, D. . (2025). Enhancing text-video retrieval performance with low-salient but discriminative objects. IEEE Transactions on Image Processing.
 ```
 ## Acknowledgement
 Codebase from [X-Pool](https://github.com/layer6ai-labs/xpool).
