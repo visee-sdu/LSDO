@@ -5,7 +5,7 @@
 - [ ] The code for LSMDC and DiDeMo datasets
 - [ ] The code for text-level LSDOs
 
-# Enhancing Text-Video Retrieval Performance with Low-Salient but Discriminative Objects
+# [Enhancing Text-Video Retrieval Performance with Low-Salient but Discriminative Objects](https://ieeexplore.ieee.org/document/10841928)
 The official repository for LSDO.
 
 ## Dependencies
@@ -47,5 +47,23 @@ python train.py --exp_name=exp_name --videos_dir=videos_dir --scene_type=average
 python train.py --exp_name=exp_name --videos_dir=videos_dir --scene_type=average --batch_size=32 --load_epoch=-1 --dataset_name=MSVD
 ```
 
+## Citation
+If you find this work useful in your research, please cite the following paper:
+```
+# BibTeX
+@ARTICLE{10841928,
+  author={Zheng, Yanwei and Huang, Bowen and Chen, Zekai and Yu, Dongxiao},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Enhancing Text-Video Retrieval Performance With Low-Salient but Discriminative Objects}, 
+  year={2025},
+  volume={34},
+  number={},
+  pages={581-593},
+  keywords={Feature extraction;Semantics;Transformers;Visualization;Prototypes;Computational modeling;Aggregates;Indexes;Encoding;Context modeling;Text-video retrieval;low-salient but discriminative objects;cross-modal attention},
+  doi={10.1109/TIP.2025.3527369}}
+
+# GB/T 7714-2015
+[1] Zheng Y , Huang B , Chen Z ,et al.Enhancing Text-Video Retrieval Performance With Low-Salient but Discriminative Objects[J].IEEE Transactions on Image Processing, 2025.DOI:10.1109/TIP.2025.3527369.
+```
 ## Acknowledgement
 Codebase from [X-Pool](https://github.com/layer6ai-labs/xpool).
